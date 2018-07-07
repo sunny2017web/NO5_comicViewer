@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eeeeee;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  background-color: #222222;
+  height: 70px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header a {
+  color: #50FF44;
+  text-decoration: none;
+}
+
+.header > div {
+  padding: 10px 0;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.contentBox {
+  padding: 20px 0;
+}
+
+.comicBox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+
+.comicBox .comicBImg {
+  border: 3px solid #222222;
+  background-image: url(../images/comicCover.png);
+  background-size: cover;
+  background-position: center center;
+  height: 430px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 450px;
+          flex: 0 1 450px;
+}
+
+.comicBox .comicInfo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 auto;
+          flex: 2 2 auto;
+}
+
+.comicBox .comicInfo .comicMtitle {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  padding: 5px;
+}
+
+.comicBox .comicInfo .comicIntro {
+  padding: 20px;
+}
+
+.comicBox .comicInfo .comicIntro .comicUnit b {
+  display: inline-block;
+  width: 70px;
+  padding-bottom: 10px;
+}
+
+.comicBox .comicInfo .comicIntro .comicUnit span {
+  display: inline-block;
+}
+
+.comicBox .comicInfo .comicIntro .comicUnit span i {
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: 10px;
+}
+
+.comicBox .comicInfo .comicTxt {
+  padding: 0 20px 20px;
+}
+
+.comicChapterBox {
+  margin-bottom: 20px;
+}
+
+.comicChapterBox .comicChapterTab {
+  background-color: #222222;
+  display: inline-block;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-size: 24px;
+}
+
+.comicChapterBox .comicChapterList {
+  background-color: #ffffff;
+  border: 3px solid #222222;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.comicChapterBox .comicChapterList .comicChapterUnit {
+  padding: 8px 15px;
+  display: block;
+  color: #222222;
+  text-decoration: none;
+}
+
+.comicChapterBox .comicChapterList .comicChapterUnit .comicChapterTag {
+  background-color: #50FF44;
+  font-size: 13px;
+  padding: 3px 5px;
+  margin-left: 5px;
+}
+
+.comicChapterBox .comicChapterList .comicChapterUnit:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.comicChapterBox .comicChapterList .comicChapterUnit:hover .comicChapterTag {
+  color: #222222;
+}
+
+.adBox {
+  margin-bottom: 20px;
+}
+
+.comicSelectBox {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.comicSelectBox .comicSelect {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.comicSelectBox .changeButton {
+  float: right;
+  display: inline-block;
+}
+
+.comicSelectBox .changeButton > i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comicSelectBox .changeButton > span {
+  display: inline-block;
+  width: 48px;
+  border: 2px solid #222222;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 5px;
+  clear: both;
+}
+
+.comicSelectBox .changeButton > span b {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: #222222;
+}
+
+.comicContent {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.comicContent img {
+  width: 100%;
+}
+
+.comicContent > span {
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  font-size: 50px;
+  top: 0;
+  height: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.comicContent > span i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.comicContent > span.arrLeft {
+  left: -50px;
+}
+
+.comicContent > span.arrRight {
+  right: -50px;
+}
+
+.comicContent > span:hover {
+  background-color: #222222;
+  color: #50FF44;
+}
+
+.comicThumbnailList {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.comicThumbnailList .comicThumbnailUnit {
+  position: relative;
+  display: inline-block;
+  width: calc(100% / 5 - 4px);
+  cursor: pointer;
+}
+
+.comicThumbnailList .comicThumbnailUnit .comicThumbnailNum {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.comicThumbnailList .comicThumbnailUnit .comicThumbnailImg img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid transparent;
+  width: 100%;
+}
+
+.comicThumbnailList .comicThumbnailUnit.active .comicThumbnailImg img {
+  border-color: #222222;
+}
+
+.comicThumbnailList .comicThumbnailUnit.active::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 20px 15px;
+  border-color: transparent transparent #222222 transparent;
+  left: calc(50% - 15px);
+}
+/*# sourceMappingURL=style.css.map */
